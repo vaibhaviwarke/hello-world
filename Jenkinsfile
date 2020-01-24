@@ -15,7 +15,8 @@ pipeline {
 				 rm -rf dist
 				 npm cache clean --force
 
-				 npm install
+				 #npm install
+				 npm install npm@latest -g
 				 ng build
 				 cd dist
 				 jar cvf dist.war .
