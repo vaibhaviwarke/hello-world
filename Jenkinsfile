@@ -16,8 +16,10 @@ pipeline {
 				 npm cache clean --force
 
 				 #npm install
-				 npm install npm@latest -g
-				 ng build
+				 #npm install npm@latest -g
+				yum install nodejs
+				node -v 
+				ng build
 				 cd dist
 				 jar cvf dist.war .
 			   """
