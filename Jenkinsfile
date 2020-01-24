@@ -14,7 +14,7 @@ pipeline {
 				 rm -rf node_modules
 				 rm -rf dist
 				 #npm cache clean --force
-
+				 n 8.0.0
 				 #npm install
 				 #npm install npm@latest -g
 				 #yum install nodejs
