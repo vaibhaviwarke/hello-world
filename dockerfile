@@ -1,6 +1,7 @@
 FROM tomcat:8.0.51-jre8-alpine
 MAINTAINER vaibhavi.warke@facileserv.in
 COPY dist.war /var/lib/tomcat/webapps
+RUN ls
 EXPOSE  8080
 USER vaibhavi
 WORKDIR /var/lib/tomcat/webapps
