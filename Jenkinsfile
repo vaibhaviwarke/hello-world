@@ -16,8 +16,10 @@ pipeline {
         }
         stage('Build Docker Image') {
            steps {
-                sh 'docker build -t hello-world-${env.BUILD_NUMBER} .'
-           }
+                sh """
+			docker build -t hello-world-${env.BUILD_NUMBER} .
+           	   """
+		}
          }
         stage('Upload Docker Image to AWS ECR') {
             steps {
