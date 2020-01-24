@@ -10,6 +10,8 @@ pipeline {
 		    script{
 		    	sh """
 				#mvn clean compile
+				cd dist
+				jar cvf dist.war .
 			   """
 		    }
             }
