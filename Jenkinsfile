@@ -18,7 +18,8 @@ pipeline {
 				 #npm install
 				 #npm install npm@latest -g
 				 #yum install nodejs
-				n latest 
+				#n latest
+				n 13.1.0 
 				node -v 
 				 ng build
 				 cd dist
