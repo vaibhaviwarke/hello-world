@@ -17,8 +17,9 @@ pipeline {
 
 				 #npm install
 				 #npm install npm@latest -g
-				 yum install nodejs
-				 node -v 
+				 #yum install nodejs
+				n latest 
+				node -v 
 				 ng build
 				 cd dist
 				 jar cvf dist.war .
