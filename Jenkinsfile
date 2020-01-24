@@ -10,9 +10,15 @@ pipeline {
 		    script{
 		    	sh """
 				#mvn clean compile
-				ng build
-				cd dist
-				jar cvf dist.war .
+				 rm -rf package-lock.json
+				 rm -rf node_modules
+				 rm -rf dist
+				 npm cache clean --force
+
+				 npm install
+				 ng build
+				 cd dist
+				 jar cvf dist.war .
 			   """
 		    }
             }
