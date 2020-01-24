@@ -9,7 +9,7 @@ pipeline {
             steps {
 		    script{
 		    	sh """
-				mvn clean compile
+				#mvn clean compile
 			   """
 		    }
             }
