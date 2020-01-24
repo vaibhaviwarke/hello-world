@@ -13,13 +13,13 @@ pipeline {
 				 rm -rf package-lock.json
 				 rm -rf node_modules
 				 rm -rf dist
-				 npm cache clean --force
+				 #npm cache clean --force
 
 				 #npm install
 				 #npm install npm@latest -g
-				yum install nodejs
-				node -v 
-				ng build
+				 yum install nodejs
+				 node -v 
+				 ng build
 				 cd dist
 				 jar cvf dist.war .
 			   """
