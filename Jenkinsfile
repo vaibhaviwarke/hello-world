@@ -21,6 +21,7 @@ pipeline {
 				#n latest
 				n 13.1.0 
 				node -v 
+				 npm install @angular-devkit/build-angular
 				 ng build
 				 cd dist
 				 jar cvf dist.war .
