@@ -10,14 +10,14 @@ pipeline {
 		    script{
 		    	sh """
 				 #mvn clean compile
-				 rm -rf package-lock.json
-				 rm -rf node_modules
-				 rm -rf dist
+				 #rm -rf package-lock.json
+				 #rm -rf node_modules
+				 #rm -rf dist
 				 #npm cache clean --force
 				 # n 8.0.0 
-				 npm update
-				 npm install 
-				 npm install --save-dev @angular-devkit/build-angular
+				 #npm update
+				 #npm install 
+				 #npm install --save-dev @angular-devkit/build-angular
 				 npm link 
 				 #npm install npm@latest -g
 				 #yum install nodejs 
