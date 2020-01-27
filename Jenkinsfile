@@ -39,13 +39,13 @@ pipeline {
            	   """
 		}
          }
-        stage('Upload Docker Image to AWS ECR') {
+        stage('Stage') {
             steps {
 			   script {
 			       sh """
-				  docker tag hello-world-${env.BUILD_NUMBER}:latest 172.16.8.93:5000/hello-world-${env.BUILD_NUMBER}
-				  docker push 172.16.8.93:5000/hello-world-${env.BUILD_NUMBER}
-				  docker rmi hello-world-${env.BUILD_NUMBER}
+				 # docker tag hello-world-${env.BUILD_NUMBER}:latest 172.16.8.93:5000/hello-world-${env.BUILD_NUMBER}
+				  #docker push 172.16.8.93:5000/hello-world-${env.BUILD_NUMBER}
+				  #docker rmi hello-world-${env.BUILD_NUMBER}
 				  """
 				  }
                   }
