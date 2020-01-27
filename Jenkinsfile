@@ -15,8 +15,10 @@ pipeline {
 				 rm -rf dist
 				 #npm cache clean --force
 				# n 8.0.0
-				 #npm install
-				 #npm install npm@latest -g
+				 npm install
+				npm install --save-dev @angular-devkit/build-angular
+				npm link 
+				#npm install npm@latest -g
 				 #yum install nodejs
 				#n latest
 				#n 13.1.0 
