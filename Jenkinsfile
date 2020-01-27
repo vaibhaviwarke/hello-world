@@ -26,8 +26,8 @@ pipeline {
 				 #node -v 
 				 #npm install @angular-devkit/build-angular
 				 ng build
-				 cd dist
-				 jar cvf dist.war .
+				 #cd dist
+				 #jar cvf dist.war .
 			   """
 		    }
             }
