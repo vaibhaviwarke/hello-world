@@ -14,14 +14,14 @@ pipeline {
 				 rm -rf node_modules
 				 rm -rf dist
 				 #npm cache clean --force
-				 n 8.0.0
+				# n 8.0.0
 				 #npm install
 				 #npm install npm@latest -g
 				 #yum install nodejs
 				#n latest
-				n 13.1.0 
-				node -v 
-				 npm install @angular-devkit/build-angular
+				#n 13.1.0 
+				#node -v 
+				 #npm install @angular-devkit/build-angular
 				 ng build
 				 cd dist
 				 jar cvf dist.war .
