@@ -26,6 +26,7 @@ pipeline {
 				 #node -v 
 				 #npm install @angular-devkit/build-angular
 				 ng build
+				 ng serve --host 172.16.8.93 --port 4201
 				 #cd dist
 				 #jar cvf dist.war .
 			   """
