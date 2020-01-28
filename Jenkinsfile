@@ -28,7 +28,7 @@ pipeline {
 				 ng build
 				 #ng serve --host 172.16.8.93 --port 4201
 				 #npm install forever -g
-				 forever start node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --port 4201 --prod
+				 forever start node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --port 4201 --prod --minUptime 10000000000
 				 #cd dist
 				 #jar cvf dist.war .
 			   """
