@@ -16,7 +16,7 @@ pipeline {
 				 npm install npm@latest -g
 				 npm install @angular-devkit/build-angular
 				 ng build --prod
-				 mv /var/lib/jenkins/workspace/Om-build/dist/hello-world/* /var/www/html
+				 mv /var/lib/jenkins/workspace/hello-world/dist/hello-world/* /var/www/html
 		          """
 		    }
             }
