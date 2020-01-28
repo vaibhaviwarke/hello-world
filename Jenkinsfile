@@ -27,17 +27,17 @@ pipeline {
 				 #npm install @angular-devkit/build-angular
 				 #ng build
 				 pm2 start "ng serve --host 172.16.8.93 --port 4202" --name pulse-app
-				pm2 logs pulse-app 
-				#pm2 start npm --name myapp -- start
-				#pm2 start "ng serve --host 172.16.8.93 --port 4201 --open" –-name pulse-app  
-				 #pm2 save
-				 #pm2 restart all 
-				#forever start /usr/local/bin/ng serve --host 172.16.8.93 --port 4202 --open --prod
-				#ng serve --host 172.16.8.93 --port 4201
+				 pm2 logs pulse-app 
+				 #pm2 start npm --name myapp -- start
+				 #pm2 start "ng serve --host 172.16.8.93 --port 4201 --open" –-name pulse-app  
+				 pm2 save
+				 pm2 restart all 
+				 #forever start /usr/local/bin/ng serve --host 172.16.8.93 --port 4202 --open --prod
+				 #ng serve --host 172.16.8.93 --port 4201
 				 #npm install forever -g
 				 #ng serve --host 172.16.8.93 --port 4202 --open --disableHostCheck
-				#forever start node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --prod 
-				#forever start --minUptime 1000 --spinSleepTime 1000 node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --port 4201 --open 
+				 #forever start node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --prod 
+				 #forever start --minUptime 1000 --spinSleepTime 1000 node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --port 4201 --open 
 				 #cd dist
 				 #jar cvf dist.war .
 			   """
