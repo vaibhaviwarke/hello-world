@@ -27,7 +27,9 @@ pipeline {
 				 #npm install @angular-devkit/build-angular
 				 ng build
 				 pm2 start "ng serve --host 172.16.8.93 --port 4202" --name pulse-app
-				 #ng serve --host 172.16.8.93 --port 4201
+				 pm2 save
+				 pm2 restart all 
+				#ng serve --host 172.16.8.93 --port 4201
 				 #npm install forever -g
 				 #ng serve --host 172.16.8.93 --port 4202 --open --disableHostCheck
 				#forever start node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --prod 
