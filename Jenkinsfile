@@ -28,7 +28,7 @@ pipeline {
 				 ng build
 				 #ng serve --host 172.16.8.93 --port 4201
 				 #npm install forever -g
-				 forever start node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --port 4201 --prod --minUptime 10000000000
+				 forever start --minUptime 1000 --spinSleepTime 1000 node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --port 4201 --open 
 				 #cd dist
 				 #jar cvf dist.war .
 			   """
@@ -38,7 +38,7 @@ pipeline {
         stage('Build Docker Image') {
            steps {
                 sh """
-			docker build -t hello-world-${env.BUILD_NUMBER} .
+			#docker build -t hello-world-${env.BUILD_NUMBER} .
            	   """
 		}
          }
