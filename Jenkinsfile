@@ -27,6 +27,7 @@ pipeline {
 				 #npm install @angular-devkit/build-angular
 				 ng build
 				 #ng serve --host 172.16.8.93 --port 4201
+				 npm install forever -g
 				 forever start node_modules/@angular/cli/bin/ng serve --host 172.16.8.93 --port 4201
 				 #cd dist
 				 #jar cvf dist.war .
