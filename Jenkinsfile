@@ -10,9 +10,9 @@ pipeline {
 		    script{
 		    	sh """
 				 #mvn clean compile
-				 #rm -rf package-lock.json
-				 #rm -rf node_modules
-				 #rm -rf dist
+				 rm -rf package-lock.json
+				 rm -rf node_modules
+				 rm -rf dist
 				 #npm cache clean --force
 				 # n 8.0.0 
 				 #npm update
@@ -25,7 +25,7 @@ pipeline {
 				 #n 13.1.0 
 				 #node -v 
 				 #npm install @angular-devkit/build-angular
-				 #ng build
+				 ng build
 				 pm2 start "ng serve --host 172.16.8.93 --port 4202" --name pulse-app
 				 #pm2 logs pulse-app 
 				 #pm2 start npm --name myapp -- start
