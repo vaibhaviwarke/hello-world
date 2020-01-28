@@ -9,12 +9,12 @@ pipeline {
             steps {
 		    script{
 		    	sh """
-				 npm cache clean --force
-				 npm update
+				 #npm cache clean --force
+				 #npm update
 				 npm install 
-				 npm install --save-dev @angular-devkit/build-angular
-				 npm install npm@latest -g
-				 npm install @angular-devkit/build-angular
+				 npm install --save-dev @angular-devkit/build-angular -g
+				 npm install npm@stable -g
+				 npm install @angular-devkit/build-angular -g
 				 ng build --prod
 				 mv /var/lib/jenkins/workspace/hello-world/dist/hello-world/* /var/www/html
 		          """
