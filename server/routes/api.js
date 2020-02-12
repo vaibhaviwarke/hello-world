@@ -40,6 +40,7 @@ router.get('/', (req, res,next) => {
         res.send(result);
       }
     })
+  });
     //login
 router.post('/login', (req, res,next) => {
     let email = req.body.email;
@@ -80,8 +81,20 @@ router.post('/login', (req, res,next) => {
   
   });
 
+
+  router.get('/getuser',(req,res,next)=>{
+    let sql="SELECT * FROM user1";
+    db.query(sql,function(err,result){
+      if(err) throw err
+      else{
+        res.send(result);
+        // console.log(result)
+      }
+    })
+  })
+
   
   
-  });
+
 
   module.exports=router;

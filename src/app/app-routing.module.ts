@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SearchSponsorComponent } from './search-sponsor/search-sponsor.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,9 @@ const routes: Routes = [
   },
   {
     path:'dashboard', component: DashboardComponent
+  },
+  {
+    path: 'searchSponsor', component:SearchSponsorComponent
   }
 ];
 
